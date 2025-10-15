@@ -518,8 +518,6 @@ inoremap fj <Esc>
 " Zeitstempel - Sa 13 Jun 09
 iab  mdyl  <C-r>=strftime("%a %d %b %y")
 
-iab dzo <C-r>="darkstar.zapto.org"<CR>
-
 iab sb <C-r>="#!/bin/bash"<CR>
 
 iab tsu <C-v>u30c4
