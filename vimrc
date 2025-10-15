@@ -174,7 +174,7 @@ set sessionoptions=blank,buffers,curdir,folds,globals,help,tabpages,winsize,term
 "}}}
 
 set number
-" map <C-N><C-N> :set inrelativenumber<CR> " Tollge relative line number
+" map <C-N><C-N> :set inrelativenumber<CR> " Toggle relative line number
 nnoremap <silent> <C-n> :set relativenumber!<CR>
 
 " Steuert die Anzahl von Zeichen, die Vim zum Darstellen der Zeilennummern nutzt
