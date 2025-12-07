@@ -1,1 +1,1 @@
-![Vimrc Demo](vimrc.gif)
+![Vimrc Demo](vimrc1.gif)
