@@ -1,3 +1,5 @@
+![Demo des Features](assets/vimrc.gif)
+
 <video src="https://raw.githubusercontent.com/chikalona/vimrc/main/assets/vimrc.mp4" 
        width="100%" 
        controls 
