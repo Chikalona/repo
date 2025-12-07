@@ -225,7 +225,6 @@ call plug#begin()
 
     " --- Immer geladen (leicht + global nützlich) ---
     Plug 'farmergreg/vim-lastplace'          " Öffnet Dateien an letzter Position
-    Plug 'sonph/onehalf', { 'rtp': 'vim' }   " Colorscheme
     Plug 'morhetz/gruvbox'                   " Colorscheme-Alternative
     Plug 'itchyny/lightline.vim'             " Statusline – sollte sofort da sein
     Plug 'rstacruz/vim-closer'               " Auto-Schließen von Klammern usw.
@@ -243,7 +242,6 @@ call plug#begin()
     Plug 'itspriddle/vim-shellcheck', { 'for': ['sh', 'bash', 'zsh'] } " Shell-Skripte
     Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'for': 'go' }  " Nur für Go-Dateien
     Plug 'pangloss/vim-javascript',  { 'for': ['javascript', 'javascriptreact'] }
-    Plug 'vim-scripts/vimwiki',      { 'for': 'vimwiki' }            " Vimwiki-Dateien
     Plug 'SirVer/ultisnips',         { 'for': ['python', 'javascript', 'sh', 'go', 'vim'] }
 
     " --- Lazy: nach Kommando geladen ---
@@ -269,11 +267,16 @@ call plug#end()
 " DEL: let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 
 " Plugin vim-table-mode {{{
-
-" TableModeToggle: <Leader>tm
-" Delete Column: <Leader>tdc
-" Insert Column: <Leader>tic
-" CSV: :Tableize/,
+"
+" |-----------------+-------------|
+" | TableModeToggle | <leader>tm  |
+" |-----------------+-------------|
+" | Delete Column   | <leader>tdc |
+" |-----------------+-------------|
+" | Insert Column   | <leader>tic |
+" |-----------------+-------------|
+" | CSV             | :Tableize/, |
+" |-----------------+-------------|
 
 let g:table_mode_align_char = ':'
 " let g:table_mode_header_fillchar='='
@@ -492,7 +495,7 @@ endfunction
 
 
 " Visual-Mode Mapping
-vnoremap <Leader>y :<C-u>call VisualCopyToClipboard()<CR>
+vnoremap <leader>y :<C-u>call VisualCopyToClipboard()<CR>
 
 " }}}
 
@@ -510,7 +513,7 @@ else
 endif
 endfunction
 
-nnoremap <Leader>p :call PasteFromClipboard()<CR>
+nnoremap <leader>p :call PasteFromClipboard()<CR>
 
 " }}}
 
@@ -623,7 +626,7 @@ nnoremap <C-Left>  :vertical resize -2<CR>
 nnoremap <C-Right> :vertical resize +2<CR>
 
 " Schnelles Mapping zum Speichern
-nnoremap <Leader>w :w<CR>
+nnoremap <leader>w :w<CR>
 
 " }}}
 
